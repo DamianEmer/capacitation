@@ -1,6 +1,7 @@
 package com.oneclock.capacitation.entities;
 
-import java.sql.Date;
+
+import java.util.Date;
 
 import javax.persistence.Column;
 import javax.persistence.EmbeddedId;
@@ -25,16 +26,15 @@ public class Buy {
 	@Column(name="quantity", nullable=false)
 	private int quantity;
 	
-	
-	@Column(name="creation_date", nullable=false)
 	@Temporal(TemporalType.TIMESTAMP)
+	@Column(name="creation_date", nullable=false)
 	private Date creationDate;
 
 	public Buy() {};
-	public Buy(BuyID buyID, int quantity, Date creationDate) {
+	public Buy(BuyID buyID, int quantity) {
 		this.buyID = buyID;
 		this.quantity = quantity;
-		this.creationDate = creationDate;
+		this.creationDate = new Date();
 	}
 	public BuyID getBuyID() {
 		return buyID;

@@ -11,13 +11,13 @@ public class BuyID implements Serializable{
 	private static final long serialVersionUID =1L;
 	
 	@Column(name="user_id_fk", nullable=false)
-	public int userID;
+	public User userID;
 	
 	@Column(name="product_id_fk", nullable=false)
-	public int productID;
+	public Product productID;
 
 	public BuyID() {};
-	public BuyID(int userID, int productID) {
+	public BuyID(User userID, Product productID) {
 		this.userID = userID;
 		this.productID = productID;
 	}
