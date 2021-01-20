@@ -19,9 +19,10 @@ public class User {
 	@Column(name="user_name", length = 100, nullable = false)
 	private String userName;
 	
-	@Column(name="user_lastName", length = 100, nullable = false )
+	@Column(name="user_last_name", length = 100, nullable = false )
 	private String userLastName;
 
+	public User() {}
 	public User(int userID, String userName, String userLastName) {
 		this.userID = userID;
 		this.userName = userName;

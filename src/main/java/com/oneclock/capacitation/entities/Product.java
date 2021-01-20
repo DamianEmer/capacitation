@@ -27,6 +27,7 @@ public class Product {
 	@Column(name= "stock", nullable=false)
 	private int stock;
 
+	public Product() {}
 	public Product(int productID, String productName, BigDecimal price, int stock) {
 		this.productID = productID;
 		this.productName = productName;
