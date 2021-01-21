@@ -44,13 +44,17 @@ public class BuyController {
 	
 	//RestController y controller
 	//BindingResult 
-	//Autowired
+	//Autowired 
 	
 	//IOC  Principio para implementar Dependecy injection
 	
 	//3 tipos de inyeccion de dependencia cuando usar una y por que?
 	//ResponseEntity
 	
+	//Constructor setter autowared
+	//Mandatory dependecy and optional dependecy
+	
+	//Studi definition
 	
 	
 }
